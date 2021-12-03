@@ -1,0 +1,42 @@
+image: gitpod/workspace-full
+tasks:
+  - name: Install dependencies
+    init: |
+      yarn --check-files --silent
+      yarn autoclean
+    # command: yarn build
+
+github:
+  prebuilds:
+    # enable for the default branch (defaults to true)
+    master: true
+    # enable for all branches in this repo (defaults to false)
+    branches: false
+    # enable for pull requests coming from this repo (defaults to true)
+    pullRequests: true
+    # enable for pull requests coming from forks (defaults to false)
+    pullRequestsFromForks: false
+    # add a check to pull requests (defaults to true)
+    addCheck: true
+    # add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
+    addComment: true
+    # add a "Review in Gitpod" button to the pull request's description (defaults to false)
+    addBadge: false
+    # add a label once the prebuild is ready to pull requests (defaults to false)
+    addLabel: prebuilt-in-gitpod
+
+vscode:
+  extensions:
+    - christian-kohler.path-intellisense
+    - codezombiech.gitignore
+    - dbaeumer.vscode-eslint
+    - eamodio.gitlens
+    - ecmel.vscode-html-css
+    - editorconfig.editorconfig
+    - ms-vscode.cpptools
+    - ms-vscode.vscode-typescript-next
+    - visualstudioexptteam.vscodeintellicode
+    - xabikos.javascriptsnippets
+    - zignd.html-css-class-completion
+    - coenraads.bracket-pair-colorizer
+    - aaron-bond.better-comments
