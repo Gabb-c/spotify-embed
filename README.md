@@ -1,2 +1,2 @@
-# spotfy-embed
-A spotfy embed component
+# spotify-embed
+A spotify embed component
