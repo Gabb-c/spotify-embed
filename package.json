@@ -14,19 +14,29 @@
     "test:ci": "jest --ci --runInBand --bail --detectOpenHandles --errorOnDeprecated",
     "test:coverage": "jest --coverage",
     "test:dev": "jest --verbose --colors --expand --maxWorkers=50% --detectOpenHandles --errorOnDeprecated --bail",
-    "test:watch": "jest --watch --verbose --colors --expand --maxWorkers=25%"
+    "test:watch": "jest --watch --verbose --colors --expand --maxWorkers=25%",
+    "prepare": "is-ci | husky install"
   },
   "dependencies": {
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@types/enzyme": "^3.10.10",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.11",
     "@types/react": "^17.0.37",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "babel-jest": "^27.4.2",
+    "enzyme": "^3.11.0",
     "eslint": "^8.3.0",
     "eslint-config-airbnb-typescript": "^16.1.0",
     "eslint-config-prettier": "^8.3.0",
@@ -36,6 +46,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^39.0.0",
     "husky": "^7.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "is-ci": "^3.0.1",
     "jest": "^27.4.3",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.0",
