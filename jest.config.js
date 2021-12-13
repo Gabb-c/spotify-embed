@@ -1,5 +1,7 @@
-module.exports = {
+/** @type {import('@jest/types').Config.InitialOptions} */
+const config = {
   clearMocks: true,
+  testEnvironment: 'jsdom',
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/', '/.dist/'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
@@ -10,7 +12,11 @@ module.exports = {
     ],
     //'^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx',
   },
-  transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss|less)$'],
+  transformIgnorePatterns: [
+    '/node_modules/',
+    '^.+\\.module\\.(css|sass|scss|less)$',
+    '<rootDir>/dist/',
+  ],
   moduleNameMapper: {
     '^.+\\.module\\.(css|sass|scss|less)$': 'identity-obj-proxy',
   },
@@ -21,3 +27,5 @@ module.exports = {
     '!**/dist/**', //  Exclude all files in the dist folder
   ],
 };
+
+module.exports = config;

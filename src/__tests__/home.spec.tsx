@@ -1,12 +1,14 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, screen } from '@testing-library/react';
 
 import { Home } from '../components/home';
 
 describe('Home', () => {
   it('should render the Home component', () => {
-    const wrap = shallow(<Home />);
+    render(<Home />);
 
-    expect(wrap.exists()).toBe(true);
+    const embed = screen.queryByLabelText('spotify-embed');
+
+    expect(embed).toBeInTheDocument();
   });
 });

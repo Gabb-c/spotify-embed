@@ -1,4 +1,6 @@
-import Enzyme from 'enzyme';
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17'; // This adapter isn't official. It will be replaced soon
+// Optional: configure or set up a testing framework before each test.
+// If you delete this file, remove `setupFilesAfterEnv` from `jest.config.js`
 
-Enzyme.configure({ adapter: new Adapter() });
+// Used for __tests__/testing-library.js
+// Learn more: https://github.com/testing-library/jest-dom
+import '@testing-library/jest-dom/extend-expect';
