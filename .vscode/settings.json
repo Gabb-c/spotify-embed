@@ -4,6 +4,8 @@
   "explorer.confirmDragAndDrop": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 0,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active",
   "eslint.format.enable": true,
   "editor.suggestSelection": "first",
   "editor.fontLigatures": true,
