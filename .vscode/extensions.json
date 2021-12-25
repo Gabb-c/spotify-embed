@@ -4,13 +4,10 @@
     "codezombiech.gitignore",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
-    "ecmel.vscode-html-css",
     "editorconfig.editorconfig",
-    "ms-vscode.cpptools",
     "ms-vscode.vscode-typescript-next",
     "visualstudioexptteam.vscodeintellicode",
     "xabikos.javascriptsnippets",
-    "zignd.html-css-class-completion",
     "aaron-bond.better-comments"
   ]
 }
