@@ -69,6 +69,7 @@
     "rollup-plugin-dts": "^4.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
+    "sort-package-json": "^1.53.1",
     "typescript": "^4.5.4"
   },
   "engines": {
