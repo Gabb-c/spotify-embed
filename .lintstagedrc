@@ -9,6 +9,7 @@
     "git add ."
   ],
   "./package.json": [
-    "sort-package-json package.json"
+    "sort-package-json package.json",
+    "git add ."
   ]
 }
