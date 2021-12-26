@@ -32,7 +32,7 @@ const config = [
       peerDepsExternal(), // automatically externalize peerDependencies in a rollup bundle
       resolve(), // locates modules using the Node resolution algorithm
       commonjs(), // convert CommonJS modules to ES6
-      typescript({ tsconfig: './tsconfig.json' }), // integration between rollup and typescript
+      typescript({ outputToFilesystem: true, tsconfig: './tsconfig.json' }), // integration between rollup and typescript
       terser(), // minify generated es bundle (uses terser under the hood)
       banner2(() => myBanner), // add banner
     ],
