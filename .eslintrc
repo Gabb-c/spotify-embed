@@ -18,16 +18,17 @@
     "plugin:jest/recommended",
     "plugin:unicorn/recommended",
     "plugin:import/recommended",
+    "plugin:storybook/recommended",
     "prettier"
   ],
-  "plugins": ["@typescript-eslint", "eslint-comments", "jest", "unicorn", "import"],
+  "plugins": ["@typescript-eslint", "eslint-comments", "jest", "unicorn", "import", "storybook"],
   "rules": {
     "unicorn/prevent-abbreviations": "off",
     "unicorn/no-array-for-each": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/?(*.)+(spec|test).[tj]s?(x)"],
+        "devDependencies": ["**/?(*.)+(spec|test).[tj]s?(x)", "**/?(*.)+(stories|story).[tj]s?(x)"],
         "optionalDependencies": false,
         "peerDependencies": true,
         "bundledDependencies": true
