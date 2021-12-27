@@ -3,8 +3,9 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    'storybook-addon-outline',
     '@storybook/addon-a11y',
+    'storybook-addon-outline',
+    '@storybook/addon-storysource',
   ],
   framework: '@storybook/react',
 };
