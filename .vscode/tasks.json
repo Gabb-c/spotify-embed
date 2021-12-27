@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "Build",
+      "detail": "yarn build"
+    },
+    {
+      "type": "npm",
+      "script": "test:dev",
+      "problemMatcher": [],
+      "label": "Test Development",
+      "detail": "yarn test:dev",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}
