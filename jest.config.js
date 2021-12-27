@@ -21,7 +21,8 @@ const config = {
     '^.+\\.module\\.(css|sass|scss|less)$': 'identity-obj-proxy',
   },
   collectCoverageFrom: [
-    '**/*.{tsx}',
+    'src/**/*.[jt]s?(x)',
+    '!src/**/*.(stories|story).[jt]s?(x)',
     '!**/*.d.ts', //  Exclude all type declaration files
     '!**/node_modules/**', //  Exclude all files in node_modules
     '!**/dist/**', //  Exclude all files in the dist folder

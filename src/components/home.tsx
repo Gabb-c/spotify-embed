@@ -7,9 +7,9 @@ export const Home: React.FC = (): JSX.Element => (
       width="300"
       height="380"
       frameBorder="0"
-      allowTransparency
+      allow-transparency="true"
       aria-label="spotify-embed"
       allow="encrypted-media"
-    ></iframe>
+    />
   </>
 );
