@@ -64,6 +64,7 @@ web_modules/
 
 # Rollup
 .rollup.cache
+stats.html
 
 # Microbundle cache
 .rpt2_cache/
