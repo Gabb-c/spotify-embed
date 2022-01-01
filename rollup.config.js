@@ -5,6 +5,7 @@ import dts from 'rollup-plugin-dts';
 import del from 'rollup-plugin-delete';
 import banner2 from 'rollup-plugin-banner2';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import analyzer from 'rollup-plugin-analyzer';
 import { terser } from 'rollup-plugin-terser';
 
 import * as packageJson from './package.json';
@@ -34,6 +35,7 @@ const config = [
       commonjs(), // convert CommonJS modules to ES6
       typescript({ outputToFilesystem: true, tsconfig: './tsconfig.json' }), // integration between rollup and typescript
       terser(), // minify generated es bundle (uses terser under the hood)
+      analyzer(),
       banner2(() => myBanner), // add banner
     ],
     external: ['react', 'react-dom'],
