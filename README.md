@@ -4,9 +4,9 @@ A spotify embed component
 
 ## Todo
 
-- [ ] Build
+- [x] Build
 - [ ] Tests
-- [ ] Storybook
+- [x] Storybook
 - [ ] Workflows
 - [ ] Docs
 - [ ] Publish
