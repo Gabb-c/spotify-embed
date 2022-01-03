@@ -9,14 +9,14 @@
         "isDefault": true
       },
       "problemMatcher": [],
-      "label": "Build",
+      "label": "Rollup Build",
       "detail": "yarn build"
     },
     {
       "type": "npm",
       "script": "test:dev",
       "problemMatcher": [],
-      "label": "Test Development",
+      "label": "Test Development (Jest)",
       "detail": "yarn test:dev",
       "group": {
         "kind": "test",
