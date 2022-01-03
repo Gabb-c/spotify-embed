@@ -3,7 +3,6 @@ tasks:
   - name: Install dependencies
     init: |
       yarn --check-files --silent
-      yarn autoclean
     # command: yarn build
 
 github:
@@ -28,15 +27,12 @@ github:
 vscode:
   extensions:
     - christian-kohler.path-intellisense
-    - codezombiech.gitignore
     - dbaeumer.vscode-eslint
     - eamodio.gitlens
     - ecmel.vscode-html-css
     - editorconfig.editorconfig
-    - ms-vscode.cpptools
     - ms-vscode.vscode-typescript-next
     - visualstudioexptteam.vscodeintellicode
     - xabikos.javascriptsnippets
     - zignd.html-css-class-completion
-    - coenraads.bracket-pair-colorizer
     - aaron-bond.better-comments
