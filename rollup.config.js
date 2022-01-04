@@ -7,6 +7,7 @@ import banner2 from 'rollup-plugin-banner2';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import analyzer from 'rollup-plugin-analyzer';
 import visualizer from 'rollup-plugin-visualizer';
+import isCI from 'is-ci';
 
 import { terser } from 'rollup-plugin-terser';
 
@@ -37,9 +38,9 @@ const config = [
       commonjs(), // convert CommonJS modules to ES6
       typescript({ outputToFilesystem: true, tsconfig: './tsconfig.json' }), // integration between rollup and typescript
       terser(), // minify generated es bundle (uses terser under the hood)
-      analyzer(),
-      visualizer(),
-      banner2(() => myBanner), // add banner
+      isCI ? null : analyzer(),
+      isCI ? null : visualizer(),
+      isCI ? null : banner2(() => myBanner),
     ],
     external: ['react', 'react-dom'],
   },
