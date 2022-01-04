@@ -40,7 +40,7 @@ const config = [
       terser(), // minify generated es bundle (uses terser under the hood)
       isCI ? null : analyzer(),
       isCI ? null : visualizer(),
-      isCI ? null : banner2(() => myBanner),
+      isCI ? banner2(() => myBanner) : null,
     ],
     external: ['react', 'react-dom'],
   },
