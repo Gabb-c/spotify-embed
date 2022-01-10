@@ -74,7 +74,7 @@
     "identity-obj-proxy": "^3.0.0",
     "is-ci": "^3.0.1",
     "jest": "^27.4.7",
-    "lint-staged": "^12.1.5",
+    "lint-staged": "^12.1.7",
     "prettier": "^2.5.1",
     "rollup": "^2.63.0",
     "rollup-plugin-analyzer": "^4.0.0",
