@@ -9,6 +9,7 @@
     "jsx": "react",
     "module": "ESNext",
     "declaration": true,
+    "allowJs": true,
     "incremental": true,
     "declarationDir": "types",
     "sourceMap": true,
