@@ -16,3 +16,13 @@ export enum SpotifyEmbedTypes {
   SHOW = 'show',
   EPISODE = 'episode',
 }
+
+export enum Default {
+  WIDTH = 300,
+  HEIGHT = 380,
+}
+
+export enum Compact {
+  WIDTH = 300,
+  HEIGHT = 380,
+}
