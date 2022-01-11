@@ -18,7 +18,7 @@ const config = {
     '<rootDir>/dist/',
   ],
   moduleNameMapper: {
-    '^.+\\.module\\.(css|sass|scss|less)$': 'identity-obj-proxy',
+    '.+\\.(svg|css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|ico)$': 'jest-transform-stub',
   },
   collectCoverageFrom: [
     'src/**/*.[jt]s?(x)',
