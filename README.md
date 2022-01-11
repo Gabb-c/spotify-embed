@@ -23,7 +23,7 @@ import { SpotifyEmbed } from 'spotify-embed'; // import the SpotifyEmbed compone
 function App() {
   return (
     <>
-      <SpotifyEmbed src='someTrackURL' /> { /* pass an URL/URI */ }
+      <SpotifyEmbed src='someTrackURL' /> { /* pass an spotify resource URL/URI */ }
     </>
   );
 }
