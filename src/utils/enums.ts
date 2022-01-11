@@ -24,5 +24,5 @@ export enum Default {
 
 export enum Compact {
   WIDTH = 300,
-  HEIGHT = 380,
+  HEIGHT = 80,
 }
