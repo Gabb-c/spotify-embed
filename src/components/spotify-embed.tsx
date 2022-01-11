@@ -9,7 +9,7 @@ export interface SpotifyEmbedProps
   /** The size of the embed
    * @defaultValue 'default'
    */
-  size?: 'default' | 'compact';
+  size?: 'default' | 'compact' | 'custom';
 }
 
 /**
@@ -26,15 +26,15 @@ export interface SpotifyEmbedProps
  * @see https://developer.spotify.com/documentation/widgets/
  */
 export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element => {
-  const { size = 'default', src = '' } = props;
+  const { size = 'default', src = '', width, height } = props;
 
   return (
     <>
       <iframe
         {...props}
         src={urlParser(src) === '' ? uriParser(src) : urlParser(src)}
-        width={size === 'default' ? Default.WIDTH : Compact.WIDTH}
-        height={size === 'default' ? Default.HEIGHT : Compact.HEIGHT}
+        width={size === 'default' ? Default.WIDTH : size === 'custom' ? width : Compact.WIDTH}
+        height={size === 'default' ? Default.HEIGHT : size === 'custom' ? height : Compact.HEIGHT}
         frameBorder="0"
         allow-transparency="true"
         aria-label="spotify-embed"
