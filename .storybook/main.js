@@ -6,6 +6,7 @@ module.exports = {
     '@storybook/addon-a11y',
     'storybook-addon-outline',
     '@storybook/addon-storysource',
+    '@storybook/addon-postcss',
   ],
   framework: '@storybook/react',
 };
