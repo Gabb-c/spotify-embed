@@ -27,8 +27,7 @@ export interface SpotifyEmbedProps
  */
 export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element => {
   const { size = 'default' } = props;
-  console.log(size);
-
+  
   return (
     <>
       <iframe
