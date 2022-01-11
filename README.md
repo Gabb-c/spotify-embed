@@ -5,11 +5,13 @@ A plug-n-play Spotify embed component.
 ## Installatiom
 
 NPM
+
 ```bash
 $ npm install spotify-embed
 ```
 
 Yarn
+
 ```bash
 $ yarn add spotify-embed
 ```
@@ -23,7 +25,7 @@ import { SpotifyEmbed } from 'spotify-embed'; // import the SpotifyEmbed compone
 function App() {
   return (
     <>
-      <SpotifyEmbed src='someTrackURL' /> { /* pass an spotify resource URL/URI */ }
+      <SpotifyEmbed src="someTrackURL" /> {/* pass an spotify resource URL/URI */}
     </>
   );
 }
