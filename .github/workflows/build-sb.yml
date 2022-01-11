@@ -1,4 +1,4 @@
-name: Build
+name: Build Storybook
 
 on:
   pull_request:
@@ -35,5 +35,5 @@ jobs:
         with:
           install-command: yarn --frozen-lockfile --check-files --silent
 
-      - name: Build
-        run: yarn build-storybook
+      - name: Build Storybook
+        run: yarn build-storybook --quiet
