@@ -1,5 +1,5 @@
 import React from 'react';
-import { Default, Compact } from '../utils';
+import { Default, Compact, urlParser, uriParser } from '../utils';
 
 export interface SpotifyEmbedProps
   extends Omit<
@@ -26,12 +26,13 @@ export interface SpotifyEmbedProps
  * @see https://developer.spotify.com/documentation/widgets/
  */
 export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element => {
-  const { size = 'default' } = props;
-  
+  const { size = 'default', src = '' } = props;
+
   return (
     <>
       <iframe
         {...props}
+        src={urlParser(src) === '' ? uriParser(src) : urlParser(src)}
         width={size === 'default' ? Default.WIDTH : Compact.WIDTH}
         height={size === 'default' ? Default.HEIGHT : Compact.HEIGHT}
         frameBorder="0"
