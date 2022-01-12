@@ -27,7 +27,7 @@
     "run:dev": "NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' tsnd --respawn --transpile-only --rs --pretty --log-error --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
     "storybook": "start-storybook -p 6006",
     "test:ci": "jest --ci --runInBand --bail --detectOpenHandles --errorOnDeprecated",
-    "test:coverage": "jest --coverage",
+    "test:cov": "jest --coverage",
     "test:dev": "jest --verbose --colors --expand --maxWorkers=50% --detectOpenHandles --errorOnDeprecated --bail",
     "test:watch": "jest --watch --verbose --colors --expand --detectOpenHandles --errorOnDeprecated --bail --maxWorkers=25%"
   },

@@ -37,6 +37,18 @@ describe('URL Parser', () => {
 
     expect(parsed).toBe(SpotifyEmbedUrl.EPISODE + '5dpInH3tAoV8qFxURbXAEv');
   });
+
+  it('sholud return an empty string from URL builder', () => {
+    const parsed = urlParser('https://open.spotify.com/');
+
+    expect(parsed).toBe('');
+  });
+
+  it('sholud return an empty string from urlParser', () => {
+    const parsed = urlParser('alkçsnfçalskdjslfj');
+
+    expect(parsed).toBe('');
+  });
 });
 
 describe('URI Parser', () => {
@@ -74,5 +86,17 @@ describe('URI Parser', () => {
     const parsed = uriParser('spotify:episode:5dpInH3tAoV8qFxURbXAEv'); // yes, again, Flow.
 
     expect(parsed).toBe(SpotifyEmbedUrl.EPISODE + '5dpInH3tAoV8qFxURbXAEv');
+  });
+
+  it('sholud return an empty string from URI builder', () => {
+    const parsed = uriParser('spotify');
+
+    expect(parsed).toBe('');
+  });
+
+  it('sholud return an empty string from uriParser', () => {
+    const parsed = uriParser('alkçsnfçalskdjslfj');
+
+    expect(parsed).toBe('');
   });
 });
