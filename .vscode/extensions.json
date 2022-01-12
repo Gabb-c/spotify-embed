@@ -7,7 +7,6 @@
     "editorconfig.editorconfig",
     "ms-vscode.vscode-typescript-next",
     "visualstudioexptteam.vscodeintellicode",
-    "xabikos.javascriptsnippets",
-    "aaron-bond.better-comments"
+    "xabikos.javascriptsnippets"
   ]
 }
