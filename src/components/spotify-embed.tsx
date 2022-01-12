@@ -6,7 +6,8 @@ export interface SpotifyEmbedProps
     React.IframeHTMLAttributes<HTMLIFrameElement>,
     'allow-transparency' | 'frameBorder' | 'aria-label' | 'allow'
   > {
-  /** The size of the embed
+  /**
+   * The size of the embed
    * @defaultValue 'default'
    */
   size?: 'default' | 'compact' | 'custom';
@@ -21,8 +22,8 @@ export interface SpotifyEmbedProps
  * - Artist
  * - Show
  * - Episode
- * @param props - Spotify embed properties
- * @returns The Spotify embed
+ * @param {SpotifyEmbedProps} props Spotify embed properties
+ * @returns {JSX.Element} The Spotify embed
  * @see https://developer.spotify.com/documentation/widgets/
  */
 export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element => {
