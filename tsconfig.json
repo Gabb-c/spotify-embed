@@ -25,6 +25,8 @@
   "exclude": [
     "node_modules",
     "dist",
+    "src/__tests__/**/*",
+    "src/stories/**/*",
     "**/*.spec.tsx",
     "**/*.test.tsx",
     "**/*.stories.tsx",

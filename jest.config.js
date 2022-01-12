@@ -3,7 +3,7 @@ const config = {
   clearMocks: true,
   testEnvironment: 'jsdom',
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
-  testPathIgnorePatterns: ['/node_modules/', '/.dist/'],
+  testPathIgnorePatterns: ['/node_modules/', '/.dist/', '/.rollup.cache/'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   transform: {
     '^.+\\.[tj]sx?$': [
