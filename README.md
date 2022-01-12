@@ -2,7 +2,7 @@
 
 A plug-n-play Spotify embed component.
 
-## Installatiom
+## Installation
 
 NPM
 
