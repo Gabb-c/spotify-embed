@@ -11,23 +11,21 @@ export interface SpotifyEmbedProps
    * @defaultValue 'default'
    */
   size?: 'default' | 'compact' | 'custom';
+  /**
+   * The Spotify resource URL/URI
+   * ( track | playlist | album | artist | show | episode )
+   */
+  src?: string;
 }
 
 /**
  * ## Spotfy Embed
- * Supports:
- * - Track
- * - Playlist
- * - Album
- * - Artist
- * - Show
- * - Episode
- * @param {SpotifyEmbedProps} props Spotify embed properties
- * @returns {JSX.Element} The Spotify embed
+ * @param props - Spotify embed properties
+ * @returns The Spotify embed
  * @see https://developer.spotify.com/documentation/widgets/
  */
 export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element => {
-  const { size = 'default', src = '', width, height } = props;
+  const { size = 'default', src = '', width = Default.WIDTH, height = Default.HEIGHT } = props;
 
   return (
     <>
