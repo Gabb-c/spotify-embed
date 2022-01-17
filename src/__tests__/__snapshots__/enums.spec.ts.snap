@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Embed Themes SpotifyEmbedTypes enum should match snapshot 1`] = `
+Object {
+  "DARK": "0",
+  "LIGHT": "1",
+}
+`;
+
 exports[`Embed Types and URL's SpotifyEmbedTypes enum should match snapshot 1`] = `
 Object {
   "ALBUM": "album",

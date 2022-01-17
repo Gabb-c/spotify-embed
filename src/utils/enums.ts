@@ -26,3 +26,8 @@ export enum Compact {
   WIDTH = 300,
   HEIGHT = 80,
 }
+
+export enum Themes {
+  LIGHT = '1',
+  DARK = '0',
+}

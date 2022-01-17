@@ -10,7 +10,7 @@ export default {
     size: 'default',
   },
   argTypes: {
-    size: { control: 'radio', options: ['custom', 'default', 'compact'], defaultValue: 'default' },
+    size: { control: 'radio', options: ['custom', 'default', 'compact'] },
   },
 } as ComponentMeta<typeof SpotifyEmbed>;
 

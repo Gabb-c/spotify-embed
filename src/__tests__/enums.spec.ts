@@ -1,4 +1,4 @@
-import { Compact, Default, SpotifyEmbedTypes, SpotifyEmbedUrl } from '../utils/enums';
+import { Compact, Default, SpotifyEmbedTypes, SpotifyEmbedUrl, Themes } from '../utils/enums';
 
 describe('Sizes', () => {
   it('Compact enum should match snapshot', () => {
@@ -17,5 +17,11 @@ describe("Embed Types and URL's", () => {
 
   it('SpotifyEmbedUrl enum should match snapshot', () => {
     expect(SpotifyEmbedUrl).toMatchSnapshot();
+  });
+});
+
+describe('Embed Themes', () => {
+  it('SpotifyEmbedTypes enum should match snapshot', () => {
+    expect(Themes).toMatchSnapshot();
   });
 });

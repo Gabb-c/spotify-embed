@@ -16,6 +16,11 @@ export interface SpotifyEmbedProps
    * ( track | playlist | album | artist | show | episode )
    */
   src?: string;
+  /**
+   * The embed theme
+   * @defaultValue 'light'
+   */
+  theme?: 'light' | 'dark';
 }
 
 /**
@@ -25,19 +30,24 @@ export interface SpotifyEmbedProps
  * @see https://developer.spotify.com/documentation/widgets/
  */
 export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element => {
-  const { size = 'default', src = '', width = Default.WIDTH, height = Default.HEIGHT } = props;
+  const {
+    size = 'default',
+    src = '',
+    width = Default.WIDTH,
+    height = Default.HEIGHT,
+    theme = 'light',
+  } = props;
 
   return (
     <>
       <iframe
         {...props}
-        src={urlParser(src) === '' ? uriParser(src) : urlParser(src)}
+        src={urlParser(src) === '' ? uriParser(src, theme) : urlParser(src, theme)}
         width={size === 'default' ? Default.WIDTH : size === 'custom' ? width : Compact.WIDTH}
         height={size === 'default' ? Default.HEIGHT : size === 'custom' ? height : Compact.HEIGHT}
         frameBorder="0"
-        allow-transparency="true"
         aria-label="spotify-embed"
-        allow="encrypted-media"
+        allow="autoplay; transparency; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       />
     </>
   );
@@ -49,4 +59,5 @@ SpotifyEmbed.defaultProps = {
   src: '',
   width: Default.WIDTH,
   height: Default.HEIGHT,
+  theme: 'light',
 };
