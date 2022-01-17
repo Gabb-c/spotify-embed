@@ -79,7 +79,7 @@
     "jest-transform-stub": "^2.0.0",
     "lint-staged": "^12.1.7",
     "prettier": "^2.5.1",
-    "rollup": "^2.63.0",
+    "rollup": "^2.64.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-banner2": "^1.2.2",
     "rollup-plugin-delete": "^2.0.0",
