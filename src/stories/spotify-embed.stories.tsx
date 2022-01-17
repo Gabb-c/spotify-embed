@@ -4,10 +4,13 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SpotifyEmbed, SpotifyEmbedProps } from '../components/spotify-embed';
 
 export default {
-  title: 'SpotifyEmbed',
+  title: 'Examples/SpotifyEmbed',
   component: SpotifyEmbed,
+  args: {
+    size: 'default',
+  },
   argTypes: {
-    size: { control: 'disable' },
+    size: { control: 'radio', options: ['custom', 'default', 'compact'], defaultValue: 'default' },
   },
 } as ComponentMeta<typeof SpotifyEmbed>;
 

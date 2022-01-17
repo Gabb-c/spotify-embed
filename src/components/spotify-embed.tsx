@@ -42,3 +42,11 @@ export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element =>
     </>
   );
 };
+
+// storybook default props
+SpotifyEmbed.defaultProps = {
+  size: 'default',
+  src: '',
+  width: Default.WIDTH,
+  height: Default.HEIGHT,
+};
