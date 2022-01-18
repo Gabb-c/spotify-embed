@@ -10,7 +10,7 @@ const config = {
       'babel-jest',
       { presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'] },
     ],
-    //'^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx',
+    //'^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx', // jest v27 not working with storyshots
   },
   transformIgnorePatterns: [
     '/node_modules/',
