@@ -26,6 +26,7 @@
     "prepare": "is-ci || husky install",
     "run:dev": "NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' tsnd --respawn --transpile-only --rs --pretty --log-error --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
     "storybook": "start-storybook -p 6006",
+    "storybook-docs": "start-storybook --docs --no-manager-cache",
     "test:ci": "jest --ci --runInBand --bail --detectOpenHandles --errorOnDeprecated",
     "test:cov": "jest --coverage",
     "test:dev": "jest --verbose --colors --expand --maxWorkers=50% --detectOpenHandles --errorOnDeprecated --bail",

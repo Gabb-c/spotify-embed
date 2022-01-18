@@ -1,0 +1,53 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { SpotifyEmbed } from '../components/spotify-embed';
+
+<Meta title="Getting Started/Basic Example" id="getting-started-example" component={SpotifyEmbed} />
+
+export const Template = (args) => <SpotifyEmbed {...args} />;
+
+## Installation
+
+First, install the package:
+
+NPM
+
+```bash
+$ npm install spotify-embed
+```
+
+Yarn
+
+```bash
+$ yarn add spotify-embed
+```
+
+## Basic Usage
+
+Import the component in your app and pass a **spotify resource URL/URI** in the **src** property:
+
+```js
+import React from 'react';
+import { SpotifyEmbed } from 'spotify-embed'; // import the SpotifyEmbed component
+
+function App() {
+  return (
+    <>
+      <SpotifyEmbed src="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j" />
+      {/* pass an spotify resource URL/URI */}
+    </>
+  );
+}
+
+export default App;
+```
+
+It will parse the URL/URI and generate the embed:
+
+<Canvas>
+  <Story
+    name="Spotify Embed"
+    args={{
+      src: 'https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j',
+    }}
+  />
+</Canvas>
