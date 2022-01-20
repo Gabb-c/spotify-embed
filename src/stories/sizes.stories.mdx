@@ -1,0 +1,114 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { SpotifyEmbed } from '../components/spotify-embed';
+
+<Meta title="Getting Started/Sizes" id="sizes-example-intro" component={SpotifyEmbed} />
+
+export const Template = (args) => <SpotifyEmbed {...args} />;
+
+## Sizes
+
+Changing the `size` of the embed is easy. It can be `default, compact or custom`:
+
+### Default
+
+```js
+import React from 'react';
+import { SpotifyEmbed } from 'spotify-embed';
+
+function App() {
+  return (
+    <>
+      <SpotifyEmbed src="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j" size="default" />
+      {/*
+        width: 300
+        height: 380
+      */}
+    </>
+  );
+}
+
+export default App;
+```
+
+<Canvas>
+  <Story
+    name="Spotify Embed Default"
+    args={{
+      src: 'https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j',
+      size: 'default',
+    }}
+  />
+</Canvas>
+
+### Compact
+
+```js
+import React from 'react';
+import { SpotifyEmbed } from 'spotify-embed';
+
+function App() {
+  return (
+    <>
+      <SpotifyEmbed src="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j" size="compact" />
+      {/*
+        width: 300
+        height: 80
+      */}
+    </>
+  );
+}
+
+export default App;
+```
+
+<Canvas>
+  <Story
+    name="Spotify Embed Compact"
+    args={{
+      src: 'https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j',
+      size: 'compact',
+    }}
+  />
+</Canvas>
+
+### Custom
+
+When using `custom` in the `size` property,
+it will take the values from `width and height` properties:
+
+```js
+import React from 'react';
+import { SpotifyEmbed } from 'spotify-embed';
+
+function App() {
+  return (
+    <>
+      <SpotifyEmbed
+        src="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j"
+        size="custom"
+        width={600}
+        height={760}
+      />
+      {/*
+        Default
+        width: 300
+        height: 380
+      */}
+    </>
+  );
+}
+
+export default App;
+```
+
+<Canvas>
+  <Story
+    name="Spotify Embed Custom"
+    args={{
+      src: 'https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j',
+      size: 'custom',
+      width: 600,
+      height: 760,
+    }}
+  />
+</Canvas>

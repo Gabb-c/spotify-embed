@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SpotifyEmbed, SpotifyEmbedProps } from '../components/spotify-embed';
 
 export default {
-  title: 'Examples/SpotifyEmbed',
+  title: 'Examples/Spotify Embed',
   component: SpotifyEmbed,
   args: {
     size: 'default',
