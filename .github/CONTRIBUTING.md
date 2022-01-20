@@ -40,7 +40,7 @@ We use GitHub issues to track public bugs and feature requests. Please, follow o
 
 This project uses [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/), so make sure your code lints:
 
-```
+```bash
 # ESLint
 
 $ yarn lint:fix
