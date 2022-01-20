@@ -57,7 +57,7 @@ $ yarn format
 To enhance the readability of the commits, this project uses [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/).
 It provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with [SemVer](https://semver.org/), by describing the features, fixes, and breaking changes made in commit messages.
 
-> lint-staged will check your commit messages with [Commitlint](https://github.com/conventional-changelog/commitlint)
+> [Commitlint](https://github.com/conventional-changelog/commitlint) will check your commit messages
 
 ## License
 
