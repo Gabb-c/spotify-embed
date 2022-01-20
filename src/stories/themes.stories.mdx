@@ -1,0 +1,64 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+import { SpotifyEmbed } from '../components/spotify-embed';
+
+<Meta title="Getting Started/Themes" id="themes-example-intro" component={SpotifyEmbed} />
+
+export const Template = (args) => <SpotifyEmbed {...args} />;
+
+## Themes
+
+Changing the `theme` of the embed is easy. It can be `light or dark`:
+
+### Light (default)
+
+```js
+import React from 'react';
+import { SpotifyEmbed } from 'spotify-embed';
+
+function App() {
+  return (
+    <>
+      <SpotifyEmbed src="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j" theme="light" />
+    </>
+  );
+}
+
+export default App;
+```
+
+<Canvas>
+  <Story
+    name="Spotify Embed Light"
+    args={{
+      src: 'https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j',
+      theme: 'light',
+    }}
+  />
+</Canvas>
+
+### Dark
+
+```js
+import React from 'react';
+import { SpotifyEmbed } from 'spotify-embed';
+
+function App() {
+  return (
+    <>
+      <SpotifyEmbed src="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j" theme="dark" />
+    </>
+  );
+}
+
+export default App;
+```
+
+<Canvas>
+  <Story
+    name="Spotify Embed Dark"
+    args={{
+      src: 'https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j',
+      theme: 'dark',
+    }}
+  />
+</Canvas>
