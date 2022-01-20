@@ -2,11 +2,11 @@
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
-- Reporting a bug
-- Discussing the current state of the code
-- Submitting a fix
-- Proposing new features
-- Becoming a maintainer
+- Reporting a bug 🐞
+- Discussing the current state of the code 📝
+- Submitting a fix 🔧
+- Proposing new features ✨
+- Becoming a maintainer 💪
 
 ## We Develop with Github
 
@@ -16,14 +16,13 @@ We use github to host code, to track issues and feature requests, as well as acc
 
 Pull requests are the best way to propose changes to the codebase. We actively welcome your pull requests:
 
-1. Fork the repo and create your branch from `main`.
-2. If you've added code that should be tested. Add tests.
-3. Update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
-6. Issue that pull request!
+1. Fork the repo and create your branch from `main`
+2. If you've added code that should be tested, add tests
+3. Update the documentation
+4. Ensure the test suite passes
+5. Make sure your code lints
 
-> Follow our [Pull Request Template]()
+> Follow our [Pull Request Template](https://github.com/Gabb-c/spotify-embed/blob/main/.github/CONTRIBUTING.md)
 
 ## Any contributions you make will be under the MIT Software License
 
@@ -33,8 +32,8 @@ In short, when you submit code changes, your submissions are understood to be un
 
 We use GitHub issues to track public bugs and feature requests. Please, follow our templates:
 
-- [Bug report template]()
-- [Feature request template]()
+- [Bug report template](https://github.com/Gabb-c/spotify-embed/blob/main/.github/ISSUE_TEMPLATE/bug_report.yml)
+- [Feature request template](https://github.com/Gabb-c/spotify-embed/blob/main/.github/ISSUE_TEMPLATE/feature_request.yml)
 
 ## Code Style
 
