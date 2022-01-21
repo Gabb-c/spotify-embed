@@ -3,7 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "description": "A spotify embed component",
-  "repository": "git@github.com:Gabb-c/spotfy-embed.git",
+  "keywords": [
+    "spotify",
+    "spotify embed",
+    "spotify api"
+  ],
+  "homepage": "",
+  "bugs": {
+    "url": "https://github.com/Gabb-c/spotify-embed/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gabb-c/spotify-embed"
+  },
   "license": "MIT",
   "author": {
     "name": "Gabb-c",
@@ -24,6 +36,7 @@
     "lint": "eslint src --ext js,jsx,ts,tsx",
     "lint:fix": "eslint src --ext js,jsx,ts,tsx --fix",
     "prepare": "is-ci || husky install",
+    "prepublishOnly": "yarn build:ci",
     "run:dev": "NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' tsnd --respawn --transpile-only --rs --pretty --log-error --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
     "storybook": "start-storybook -p 6006",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
