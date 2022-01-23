@@ -22,8 +22,8 @@ vscode:
     - eamodio.gitlens
     - ecmel.vscode-html-css
     - editorconfig.editorconfig
-    - ms-vscode.vscode-typescript-next
-    - visualstudioexptteam.vscodeintellicode
     - xabikos.javascriptsnippets
     - zignd.html-css-class-completion
     - aaron-bond.better-comments
+    #  - visualstudioexptteam.vscodeintellicode
+    #  - ms-vscode.vscode-typescript-next
