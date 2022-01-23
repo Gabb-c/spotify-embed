@@ -50,7 +50,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.10",
+    "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
@@ -97,9 +97,9 @@
     "is-ci": "^3.0.1",
     "jest": "^27.4.7",
     "jest-transform-stub": "^2.0.0",
-    "lint-staged": "^12.2.2",
+    "lint-staged": "^12.3.0",
     "prettier": "^2.5.1",
-    "rollup": "^2.65.0",
+    "rollup": "^2.66.0",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-banner2": "^1.2.2",
     "rollup-plugin-delete": "^2.0.0",
