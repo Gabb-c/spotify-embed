@@ -47,7 +47,7 @@
 *.tld           text eol=lf
 *.ts            text eol=lf
 *.xml           text eol=lf
-.releaserc      text eol=lf linguist-language=Json
+.releaserc      text eol=lf diff=json
 
 # Graphics
 *.png      binary
