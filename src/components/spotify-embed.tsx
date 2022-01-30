@@ -1,4 +1,3 @@
-import React from 'react';
 import { Default, Compact, urlParser, uriParser } from '../utils';
 
 export interface SpotifyEmbedProps
