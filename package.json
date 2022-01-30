@@ -45,10 +45,7 @@
     "test:dev": "jest --verbose --colors --expand --maxWorkers=50% --detectOpenHandles --errorOnDeprecated --bail",
     "test:watch": "jest --watch --verbose --colors --expand --detectOpenHandles --errorOnDeprecated --bail --maxWorkers=25%"
   },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
@@ -79,6 +76,7 @@
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.12",
     "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "babel-jest": "^27.4.6",
@@ -99,6 +97,8 @@
     "jest-transform-stub": "^2.0.0",
     "lint-staged": "^12.3.2",
     "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rollup": "^2.66.1",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-banner2": "^1.2.2",
@@ -114,6 +114,9 @@
     "tsd": "^0.19.1",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
   },
   "engines": {
     "node": ">=14.18.2"

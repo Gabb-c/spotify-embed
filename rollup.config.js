@@ -42,7 +42,6 @@ const config = [
       isCI ? null : visualizer(),
       isCI ? banner2(() => myBanner) : null,
     ],
-    external: ['react', 'react-dom'],
   },
   // typings
   {
