@@ -28,3 +28,27 @@ jobs:
 
       - name: Test
         run: yarn test:ci
+
+  typings:
+    name: Test Generated Typings
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2.4.0
+
+      - name: Set up Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1.7.11
+        with:
+          install-command: yarn --frozen-lockfile --check-files --silent
+
+      - name: Build
+        run: yarn build
+
+      - name: Build
+        run: yarn test:types

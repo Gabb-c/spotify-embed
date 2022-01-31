@@ -43,6 +43,7 @@
     "test:ci": "jest --ci --runInBand --bail --detectOpenHandles --errorOnDeprecated",
     "test:cov": "jest --coverage",
     "test:dev": "jest --verbose --colors --expand --maxWorkers=50% --detectOpenHandles --errorOnDeprecated --bail",
+    "test:types": "yarn tsd",
     "test:watch": "jest --watch --verbose --colors --expand --detectOpenHandles --errorOnDeprecated --bail --maxWorkers=25%"
   },
   "dependencies": {},
@@ -120,5 +121,8 @@
   },
   "engines": {
     "node": ">=14.18.2"
+  },
+  "tsd": {
+    "directory": "./src/__tests__"
   }
 }

@@ -28,7 +28,11 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/?(*.)+(spec|test).[tj]s?(x)", "**/?(*.)+(stories|story).[tj]s?(x)"],
+        "devDependencies": [
+          "**/?(*.)+(spec|test).[tj]s?(x)",
+          "**/?(*.)+(stories|story).[tj]s?(x)",
+          "**/?(*.)+(test-d).ts"
+        ],
         "optionalDependencies": false,
         "peerDependencies": true,
         "bundledDependencies": true
