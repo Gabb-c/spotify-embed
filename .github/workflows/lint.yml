@@ -26,5 +26,8 @@ jobs:
         with:
           install-command: yarn --frozen-lockfile --check-files --silent
 
+      - name: Build
+        run: yarn build
+
       - name: Lint
         run: yarn lint
