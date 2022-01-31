@@ -14,7 +14,7 @@
 #        - name: Set up Node
 #          uses: actions/setup-node@v2.5.1
 #          with:
-#            node-version: 14.18.3
+#            node-version-file: '.nvmrc'
 #
 #        - name: Install dependencies
 #          uses: bahmutov/npm-install@v1.7.11
