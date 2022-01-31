@@ -50,5 +50,5 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Build
+      - name: Test
         run: yarn test:types
