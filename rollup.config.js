@@ -10,9 +10,9 @@ import visualizer from 'rollup-plugin-visualizer';
 import isCI from 'is-ci';
 
 import { terser } from 'rollup-plugin-terser';
+import { myBanner } from './banner';
 
 import * as packageJson from './package.json';
-import { myBanner } from './banner';
 
 /** @type {import('rollup').RollupOptions} */
 const config = [
