@@ -1,6 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import typescript from '@rollup/plugin-typescript';
+import typescript from 'rollup-plugin-typescript2';
 import dts from 'rollup-plugin-dts';
 import del from 'rollup-plugin-delete';
 import banner2 from 'rollup-plugin-banner2';
@@ -12,7 +12,7 @@ import isCI from 'is-ci';
 import { terser } from 'rollup-plugin-terser';
 import { myBanner } from './banner';
 
-import * as packageJson from './package.json';
+import * as PACKAGE from './package.json';
 
 /** @type {import('rollup').RollupOptions} */
 const config = [
@@ -21,13 +21,13 @@ const config = [
     output: [
       // commonjs
       {
-        file: packageJson.main,
+        file: PACKAGE.main,
         format: 'cjs',
         sourcemap: true,
       },
       // esmodule
       {
-        file: packageJson.module,
+        file: PACKAGE.module,
         format: 'esm',
         sourcemap: true,
       },
@@ -36,7 +36,7 @@ const config = [
       peerDepsExternal(), // automatically externalize peerDependencies in a rollup bundle
       resolve(), // locates modules using the Node resolution algorithm
       commonjs(), // convert CommonJS modules to ES6
-      typescript({ outputToFilesystem: true, tsconfig: './tsconfig.json' }), // integration between rollup and typescript
+      typescript({ tsconfig: './tsconfig.json', useTsconfigDeclarationDir: true }), // integration between rollup and typescript
       terser(), // minify generated es bundle (uses terser under the hood)
       isCI ? null : analyzer(),
       isCI ? null : visualizer(),
@@ -45,7 +45,7 @@ const config = [
   },
   // typings
   {
-    input: 'dist/types/index.d.ts',
+    input: 'lib/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     plugins: [dts(), del({ targets: 'dist/types', hook: 'buildEnd' }), banner2(() => myBanner)], // roll-up .d.ts files and delete the types dir
   },

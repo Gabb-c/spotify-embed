@@ -11,15 +11,13 @@
     "declaration": true,
     "allowJs": true,
     "incremental": true,
-    "declarationDir": "types",
+    "declarationDir": "lib/types",
     "sourceMap": true,
-    "outDir": "dist",
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src/**/*"],
   "exclude": [
