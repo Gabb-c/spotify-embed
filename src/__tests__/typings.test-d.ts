@@ -1,5 +1,5 @@
 import { expectError, expectType } from 'tsd';
-import * as myModule from '../../dist';
+import * as myModule from '../../lib';
 
 // Parsers
 expectType<string>(myModule.urlParser(''));
