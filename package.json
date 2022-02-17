@@ -118,7 +118,7 @@
     "react": "^17.0.2"
   },
   "engines": {
-    "node": ">=14.18.2"
+    "node": ">=12.x.x"
   },
   "tsd": {
     "directory": "./src/__tests__"
