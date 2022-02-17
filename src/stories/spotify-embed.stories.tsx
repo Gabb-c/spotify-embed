@@ -1,4 +1,4 @@
-import React from 'react';
+/*eslint-disable-next-line import/named */
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { SpotifyEmbed, SpotifyEmbedProps } from '../components/spotify-embed';
