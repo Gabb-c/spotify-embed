@@ -39,7 +39,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.4.0
 
-      - name: Install dependencies
+      - name: Install dependencies (yarn)
         uses: bahmutov/npm-install@v1.7.12
         with:
           install-command: yarn --frozen-lockfile --check-files --silent
