@@ -6,7 +6,25 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/github",
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "lib/index.esm.js",
+            "label": "ES Module"
+          },
+          {
+            "path": "lib/index.js",
+            "label": "Common JS"
+          },
+          {
+            "path": "lib/index.d.ts",
+            "label": "Typings"
+          }
+        ]
+      }
+    ],
     "@semantic-release/npm",
     [
       "@semantic-release/git",
