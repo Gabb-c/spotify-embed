@@ -1,14 +1,14 @@
 {
   "name": "spotify-embed",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "A spotify embed component",
   "keywords": [
     "spotify",
     "spotify embed",
     "spotify api"
   ],
-  "homepage": "",
+  "homepage": "https://spotify-embed.netlify.app/",
   "bugs": {
     "url": "https://github.com/Gabb-c/spotify-embed/issues"
   },

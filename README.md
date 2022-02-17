@@ -45,7 +45,7 @@ export default App;
 
 ## Documentation
 
-Link to documentation
+Check out our [Documentation](https://spotify-embed.netlify.app/)
 
 ## Leave your feedback
 
