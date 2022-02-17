@@ -3,6 +3,10 @@ name: CI/CD
 on:
   push:
     branches: [main]
+    paths:
+      - 'src/**/*'
+      - 'package.json'
+      - 'yarn.lock'
 
 jobs:
   build:
