@@ -8,6 +8,7 @@ export enum SpotifyEmbedUrl {
   EPISODE = 'https://open.spotify.com/embed/episode/',
 }
 
+/** List of Spotify embed types */
 export enum SpotifyEmbedTypes {
   TRACK = 'track',
   ALBUM = 'album',
@@ -17,16 +18,21 @@ export enum SpotifyEmbedTypes {
   EPISODE = 'episode',
 }
 
+/** Default sizes */
 export enum Default {
   WIDTH = 300,
   HEIGHT = 380,
 }
 
+
+/** Compact sizes */
 export enum Compact {
   WIDTH = 300,
   HEIGHT = 80,
 }
 
+
+/** Theme types */
 export enum Themes {
   LIGHT = '1',
   DARK = '0',
