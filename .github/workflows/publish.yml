@@ -47,6 +47,9 @@ jobs:
         uses: bahmutov/npm-install@v1.7.12
         with:
           install-command: yarn --frozen-lockfile --check-files --silent
+      
+      - name: Build (GH Release)
+        run: yarn build
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2.7.0
