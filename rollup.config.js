@@ -47,7 +47,11 @@ const config = [
   {
     input: 'lib/types/index.d.ts',
     output: [{ file: 'lib/index.d.ts', format: 'esm' }],
-    plugins: [dts(), del({ targets: 'lib/types', hook: 'buildEnd' }), banner2(() => myBanner)], // roll-up .d.ts files and delete the types dir
+    plugins: [
+      dts(),
+      del({ targets: 'lib/types', hook: 'buildEnd' }),
+      isCI ? banner2(() => myBanner) : null,
+    ], // roll-up .d.ts files and delete the types dir
   },
 ];
 
