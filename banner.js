@@ -1,13 +1,13 @@
-import * as packageJson from './package.json';
+import * as PACKAGE from './package.json';
 import ci from 'ci-info';
 
 export const myBanner = `
 /**
  * - - - - - - - -
- * ${packageJson.name}
- * Author: ${packageJson.author.name}
- * License: ${packageJson.license}
- * Version: ${packageJson.version}
+ * ${PACKAGE.name}
+ * Author: ${PACKAGE.author.name}
+ * License: ${PACKAGE.license}
+ * Version: ${PACKAGE.version}
  * CI/CD: ${ci.name}
  * - - - - - - - -
  */
