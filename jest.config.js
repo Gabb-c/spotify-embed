@@ -10,8 +10,18 @@ const config = {
   testPathIgnorePatterns: ['/node_modules/', '/.dist/', '/.rollup.cache/'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   transform: {
-    '^.+\\.[tj]sx?$': 'ts-jest', // ts-jest supports react-jsx
-    //'^.+\\.mdx$': '@storybook/addon-docs/jest-transform-mdx', // jest v27 not working with storyshots
+    '^.+\\.(t|j)sx?$': [
+      '@swc/jest',
+      {
+        jsc: {
+          transform: {
+            react: {
+              runtime: 'automatic',
+            },
+          },
+        },
+      },
+    ],
   },
   transformIgnorePatterns: [
     '/node_modules/',
