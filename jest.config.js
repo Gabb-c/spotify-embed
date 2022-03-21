@@ -34,9 +34,9 @@ const config = {
   collectCoverageFrom: [
     'src/**/*.[jt]s?(x)',
     '!src/**/*.(stories|story).[jt]s?(x)',
-    '!**/*.d.ts', //  Exclude all type declaration files
-    '!**/node_modules/**', //  Exclude all files in node_modules
-    '!**/dist/**', //  Exclude all files in the dist folder
+    '!**/*.d.ts',
+    '!**/node_modules/**',
+    '!**/dist/**',
   ],
 };
 
