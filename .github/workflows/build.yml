@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ['lts/fermium', 'lts/gallium', 17.x]
+        node-version: ['lts/fermium', 'lts/gallium', current]
 
     steps:
       - name: Checkout repository
