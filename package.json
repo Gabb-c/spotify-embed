@@ -69,7 +69,7 @@
     "@storybook/builder-webpack5": "^6.5.9",
     "@storybook/manager-webpack5": "^6.5.9",
     "@storybook/react": "^6.5.9",
-    "@swc/core": "^1.2.198",
+    "@swc/core": "^1.2.203",
     "@swc/jest": "^0.2.21",
     "@testing-library/dom": "^8.13.0",
     "@testing-library/jest-dom": "^5.16.4",
@@ -77,12 +77,12 @@
     "@testing-library/user-event": "^14.2.0",
     "@types/bluebird": "^3.5.36",
     "@types/jest": "^28.1.1",
-    "@types/node": "^17.0.42",
+    "@types/node": "^17.0.43",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
-    "ci-info": "^3.3.1",
+    "ci-info": "^3.3.2",
     "eslint": "^8.17.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
@@ -99,8 +99,8 @@
     "jest-transform-stub": "^2.0.0",
     "lint-staged": "^13.0.1",
     "prettier": "^2.7.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^2.75.6",
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-banner2": "^1.2.2",
@@ -121,8 +121,8 @@
     "webpack": "^5.73.0"
   },
   "peerDependencies": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "engines": {
     "node": ">=12.x.x"
