@@ -22,7 +22,7 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1.8.13
+        uses: bahmutov/npm-install@v1.8.17
         with:
           install-command: yarn --frozen-lockfile --check-files --silent
 
