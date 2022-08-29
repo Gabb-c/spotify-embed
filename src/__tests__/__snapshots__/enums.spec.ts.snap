@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Embed Themes SpotifyEmbedTypes enum should match snapshot 1`] = `
-Object {
+{
   "DARK": "0",
   "LIGHT": "1",
 }
 `;
 
 exports[`Embed Types and URL's SpotifyEmbedTypes enum should match snapshot 1`] = `
-Object {
+{
   "ALBUM": "album",
   "ARTIST": "artist",
   "EPISODE": "episode",
@@ -19,7 +19,7 @@ Object {
 `;
 
 exports[`Embed Types and URL's SpotifyEmbedUrl enum should match snapshot 1`] = `
-Object {
+{
   "ALBUM": "https://open.spotify.com/embed/album/",
   "ARTIST": "https://open.spotify.com/embed/artist/",
   "EPISODE": "https://open.spotify.com/embed/episode/",
@@ -30,7 +30,7 @@ Object {
 `;
 
 exports[`Sizes Compact enum should match snapshot 1`] = `
-Object {
+{
   "300": "WIDTH",
   "80": "HEIGHT",
   "HEIGHT": 80,
@@ -39,7 +39,7 @@ Object {
 `;
 
 exports[`Sizes Default enum should match snapshot 1`] = `
-Object {
+{
   "300": "WIDTH",
   "380": "HEIGHT",
   "HEIGHT": 380,
