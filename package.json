@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook --docs --quiet",
     "build:watch": "rollup -c -w",
     "format": "prettier 'src/**/*.[jt]s?(x)' --write",
@@ -38,6 +38,7 @@
     "prepare": "is-ci || husky install",
     "prepublishOnly": "yarn build",
     "run:dev": "NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' tsnd --respawn --transpile-only --rs --pretty --log-error --compiler-options \"{\\\"module\\\":\\\"commonjs\\\"}\"",
+    "serve-storybook": "serve storybook-static",
     "storybook": "start-storybook -p 6006",
     "storybook-docs": "start-storybook --docs --no-manager-cache",
     "test:ci": "jest --ci --runInBand --bail --detectOpenHandles --errorOnDeprecated",
