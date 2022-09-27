@@ -29,7 +29,6 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook --docs --quiet",
     "build:watch": "rollup -c -w",
     "format": "prettier 'src/**/*.[jt]s?(x)' --write",
