@@ -24,13 +24,11 @@ export enum Default {
   HEIGHT = 380,
 }
 
-
 /** Compact sizes */
 export enum Compact {
   WIDTH = 300,
   HEIGHT = 80,
 }
-
 
 /** Theme types */
 export enum Themes {

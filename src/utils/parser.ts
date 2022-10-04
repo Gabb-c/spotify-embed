@@ -8,20 +8,27 @@ import { SpotifyEmbedUrl, SpotifyEmbedTypes, Themes } from './enums';
 const buildUrl = (embedType: string, spotifyId: string, theme?: 'light' | 'dark'): string => {
   const chosenTheme = theme === 'dark' ? Themes.DARK : Themes.LIGHT;
   switch (embedType) {
-    case SpotifyEmbedTypes.ALBUM:
+    case SpotifyEmbedTypes.ALBUM: {
       return SpotifyEmbedUrl.ALBUM + spotifyId + `?theme=${chosenTheme}`;
-    case SpotifyEmbedTypes.ARTIST:
+    }
+    case SpotifyEmbedTypes.ARTIST: {
       return SpotifyEmbedUrl.ARTIST + spotifyId + `?theme=${chosenTheme}`;
-    case SpotifyEmbedTypes.EPISODE:
+    }
+    case SpotifyEmbedTypes.EPISODE: {
       return SpotifyEmbedUrl.EPISODE + spotifyId + `?theme=${chosenTheme}`;
-    case SpotifyEmbedTypes.PLAYLIST:
+    }
+    case SpotifyEmbedTypes.PLAYLIST: {
       return SpotifyEmbedUrl.PLAYLIST + spotifyId + `?theme=${chosenTheme}`;
-    case SpotifyEmbedTypes.SHOW:
+    }
+    case SpotifyEmbedTypes.SHOW: {
       return SpotifyEmbedUrl.SHOW + spotifyId + `?theme=${chosenTheme}`;
-    case SpotifyEmbedTypes.TRACK:
+    }
+    case SpotifyEmbedTypes.TRACK: {
       return SpotifyEmbedUrl.TRACK + spotifyId + `?theme=${chosenTheme}`;
-    default:
+    }
+    default: {
       return '';
+    }
   }
 };
 
