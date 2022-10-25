@@ -1,4 +1,4 @@
-import * as PACKAGE from './package.json';
+import * as PACKAGE from './package.json' assert { type: 'json' };
 import ci from 'ci-info';
 
 export const myBanner = `
