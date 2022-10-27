@@ -8,7 +8,7 @@ const config = {
     '!**/?(*.)+(test-d).ts',
   ],
   testPathIgnorePatterns: ['/node_modules/', '/.dist/', '/.rollup.cache/'],
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.cjs'],
   transform: {
     '^.+\\.(t|j)sx?$': [
       '@swc/jest',
