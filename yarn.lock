@@ -14054,9 +14054,9 @@ rollup-plugin-visualizer@^5.8.3:
     yargs "^17.5.1"
 
 rollup@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.2.3.tgz#67d894c981ad50cc811779748e52c05742560c64"
-  integrity sha512-qfadtkY5kl0F5e4dXVdj2D+GtOdifasXHFMiL1SMf9ADQDv5Eti6xReef9FKj+iQPR2pvtqWna57s/PjARY4fg==
+  version "3.20.5"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.20.5.tgz#efeb4495a87c73d2f6ee19e48159953d061612de"
+  integrity sha512-Mx6NE3nLPIP6a9ReV4dTPOYYmDiyarJNtSbc37Jx0jvh8SHySoFPgyZAp9aDP3LnYvaJOrz+fclcwq3oZDzlnA==
   optionalDependencies:
     fsevents "~2.3.2"
 
