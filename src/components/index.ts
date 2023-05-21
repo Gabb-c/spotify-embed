@@ -1,1 +1,1 @@
-export * from './spotify-embed';
+export * from "./spotify-embed";

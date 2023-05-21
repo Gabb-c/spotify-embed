@@ -1,10 +1,9 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Spotify Embed should match snapshot (URI) 1`] = `
+exports[`Spotify Embed > should match snapshot (URI) 1`] = `
 <iframe
   allow="autoplay; transparency; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
   aria-label="spotify-embed"
-  frameborder="0"
   height="380"
   src="https://open.spotify.com/embed/track/5mslcDXYQbmOFL6s031NvN?theme=1"
   theme="light"
@@ -12,11 +11,10 @@ exports[`Spotify Embed should match snapshot (URI) 1`] = `
 />
 `;
 
-exports[`Spotify Embed should match snapshot (URL) 1`] = `
+exports[`Spotify Embed > should match snapshot (URL) 1`] = `
 <iframe
   allow="autoplay; transparency; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
   aria-label="spotify-embed"
-  frameborder="0"
   height="380"
   src="https://open.spotify.com/embed/track/5mslcDXYQbmOFL6s031NvN?theme=1"
   theme="light"

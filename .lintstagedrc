@@ -1,15 +1,5 @@
 {
-  "src/**/*.{js,ts,tsx}": [
-    "eslint src --ext js,ts --fix",
-    "prettier 'src/**/*.[jt]s?(x)' --write",
-    "git add ."
-  ],
-  "**/*.{md,mdx,json}": [
-    "prettier '**/*.{md,mdx,json}' --write",
-    "git add ."
-  ],
-  "./package.json": [
-    "sort-package-json package.json",
-    "git add ."
-  ]
+  "src/**/*": ["pnpm lint:fix", "pnpm format:fix"],
+  "pnpm-lock.yaml": ["pnpm audit"],
+  "package.json": ["pnpm sort-package-json"]
 }

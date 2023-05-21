@@ -2,53 +2,35 @@ name: Test
 
 on:
   pull_request:
-    branches: [main]
+    branches:
+      - "**"
 
   push:
-    branches: [main]
+    branches:
+      - "**"
 
 jobs:
-  code:
-    name: Test code
+  test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3.5.0
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.4
+        id: pnpm-install
         with:
-          node-version-file: '.nvmrc'
+          version: latest
+          run_install: false
+
+      - name: Setup Node.js lts/gallium
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: lts/gallium
+          cache: pnpm
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1.8.23
-        with:
-          install-command: yarn --frozen-lockfile --check-files --silent
+        run: pnpm install --frozen-lockfile
 
-      - name: Test
-        run: yarn test:ci
-
-  typings:
-    name: Test Generated Typings
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v3.5.0
-        with:
-          node-version-file: '.nvmrc'
-
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1.8.23
-        with:
-          install-command: yarn --frozen-lockfile --check-files --silent
-
-      - name: Build
-        run: yarn build
-
-      - name: Test
-        run: yarn test:types
+      - name: Run tests
+        run: pnpm test:ci

@@ -2,32 +2,44 @@ name: Lint
 
 on:
   pull_request:
-    branches: [main]
+    branches:
+      - "**"
 
   push:
-    branches: [main]
+    branches:
+      - "**"
 
 jobs:
-  code:
-    name: Lint code
+  lint:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Node
-        uses: actions/setup-node@v3.5.0
+      - uses: pnpm/action-setup@v2.2.4
+        name: Install pnpm
+        id: pnpm-install
         with:
-          node-version-file: '.nvmrc'
+          version: latest
+          run_install: false
+
+      - name: Setup Node lts/gallium
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: lts/gallium
+          cache: pnpm
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1.8.23
-        with:
-          install-command: yarn --frozen-lockfile --check-files --silent
+        run: pnpm install --frozen-lockfile
 
-      - name: Build
-        run: yarn build
+      - name: Audit installed dependencies
+        run: pnpm audit
 
-      - name: Lint
-        run: yarn lint
+      - name: Lint (Rome)
+        run: pnpm lint
+
+      - name: Format (Rome)
+        run: pnpm format
+
+      - name: Typecheck (tsc)
+        run: pnpm lint:tsc

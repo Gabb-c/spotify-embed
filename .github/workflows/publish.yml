@@ -6,53 +6,65 @@ on:
     paths:
       - 'src/**/*'
       - 'package.json'
-      - 'yarn.lock'
+      - 'pnpm-lock.yaml'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Node
-        uses: actions/setup-node@v3.5.0
+      - uses: pnpm/action-setup@v2.2.4
+        name: Install pnpm
+        id: pnpm-install
         with:
-          node-version-file: '.nvmrc'
+          version: latest
+          run_install: false
+
+      - name: Set up Node
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: lts/gallium
+          cache: pnpm
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1.8.23
-        with:
-          install-command: yarn --frozen-lockfile --check-files --silent
+        run: pnpm install --frozen-lockfile
 
-      - name: Lint
-        run: yarn lint
+      - name: Lint (Rome)
+        run: pnpm lint
+
+      - name: Format (Rome)
+        run: pnpm format
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
       - name: Test
-        run: yarn test:ci
+        run: pnpm test:ci
 
   release:
     name: Release
-    if: ${{ github.ref == 'refs/heads/main' }}
+    if: ${{ github.ref == 'refs/heads/stable' }}
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install dependencies (yarn)
-        uses: bahmutov/npm-install@v1.8.23
+      - uses: pnpm/action-setup@v2.2.4
+        name: Install pnpm
+        id: pnpm-install
         with:
-          install-command: yarn --frozen-lockfile --check-files --silent
+          version: latest
+          run_install: false
 
-      - name: Build (GH Release)
-        run: yarn build
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v3.1.1
+        uses: cycjimmy/semantic-release-action@v3.4.2
         with:
           extra_plugins: |
             @semantic-release/git

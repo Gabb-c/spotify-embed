@@ -1,15 +1,15 @@
-import { Default, Compact, urlParser, uriParser } from '../utils';
+import { Compact, Default, uriParser, urlParser } from "../utils";
 
 export interface SpotifyEmbedProps
   extends Omit<
     React.IframeHTMLAttributes<HTMLIFrameElement>,
-    'allow-transparency' | 'frameBorder' | 'aria-label' | 'allow'
+    "allow-transparency" | "frameBorder" | "aria-label" | "allow"
   > {
   /**
    * The size of the embed
    * @defaultValue 'default'
    */
-  size?: 'default' | 'compact' | 'custom';
+  size?: "default" | "compact" | "custom";
   /**
    * The Spotify resource URL/URI
    * ( track | playlist | album | artist | show | episode )
@@ -19,7 +19,7 @@ export interface SpotifyEmbedProps
    * The embed theme
    * @defaultValue 'light'
    */
-  theme?: 'light' | 'dark';
+  theme?: "light" | "dark";
 }
 
 /**
@@ -30,21 +30,20 @@ export interface SpotifyEmbedProps
  */
 export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element => {
   const {
-    size = 'default',
-    src = '',
+    size = "default",
+    src = "",
     width = Default.WIDTH,
     height = Default.HEIGHT,
-    theme = 'light',
+    theme = "light",
   } = props;
 
   return (
     <>
       <iframe
         {...props}
-        src={urlParser(src) === '' ? uriParser(src, theme) : urlParser(src, theme)}
-        width={size === 'default' ? Default.WIDTH : size === 'custom' ? width : Compact.WIDTH}
-        height={size === 'default' ? Default.HEIGHT : size === 'custom' ? height : Compact.HEIGHT}
-        frameBorder="0"
+        src={urlParser(src) === "" ? uriParser(src, theme) : urlParser(src, theme)}
+        width={size === "default" ? Default.WIDTH : size === "custom" ? width : Compact.WIDTH}
+        height={size === "default" ? Default.HEIGHT : size === "custom" ? height : Compact.HEIGHT}
         aria-label="spotify-embed"
         allow="autoplay; transparency; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       />
@@ -54,9 +53,9 @@ export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element =>
 
 // storybook default props
 SpotifyEmbed.defaultProps = {
-  size: 'default',
-  src: '',
+  size: "default",
+  src: "",
   width: Default.WIDTH,
   height: Default.HEIGHT,
-  theme: 'light',
+  theme: "light",
 };

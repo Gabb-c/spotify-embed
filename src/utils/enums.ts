@@ -1,21 +1,21 @@
 /** List of available embed spotify URL's */
 export enum SpotifyEmbedUrl {
-  TRACK = 'https://open.spotify.com/embed/track/',
-  ALBUM = 'https://open.spotify.com/embed/album/',
-  PLAYLIST = 'https://open.spotify.com/embed/playlist/',
-  ARTIST = 'https://open.spotify.com/embed/artist/',
-  SHOW = 'https://open.spotify.com/embed/show/',
-  EPISODE = 'https://open.spotify.com/embed/episode/',
+  TRACK = "https://open.spotify.com/embed/track/",
+  ALBUM = "https://open.spotify.com/embed/album/",
+  PLAYLIST = "https://open.spotify.com/embed/playlist/",
+  ARTIST = "https://open.spotify.com/embed/artist/",
+  SHOW = "https://open.spotify.com/embed/show/",
+  EPISODE = "https://open.spotify.com/embed/episode/",
 }
 
 /** List of Spotify embed types */
 export enum SpotifyEmbedTypes {
-  TRACK = 'track',
-  ALBUM = 'album',
-  PLAYLIST = 'playlist',
-  ARTIST = 'artist',
-  SHOW = 'show',
-  EPISODE = 'episode',
+  TRACK = "track",
+  ALBUM = "album",
+  PLAYLIST = "playlist",
+  ARTIST = "artist",
+  SHOW = "show",
+  EPISODE = "episode",
 }
 
 /** Default sizes */
@@ -32,6 +32,6 @@ export enum Compact {
 
 /** Theme types */
 export enum Themes {
-  LIGHT = '1',
-  DARK = '0',
+  LIGHT = "1",
+  DARK = "0",
 }

@@ -1,13 +1,13 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Embed Themes SpotifyEmbedTypes enum should match snapshot 1`] = `
+exports[`Embed Themes > SpotifyEmbedTypes enum should match snapshot 1`] = `
 {
   "DARK": "0",
   "LIGHT": "1",
 }
 `;
 
-exports[`Embed Types and URL's SpotifyEmbedTypes enum should match snapshot 1`] = `
+exports[`Embed Types and URL's > SpotifyEmbedTypes enum should match snapshot 1`] = `
 {
   "ALBUM": "album",
   "ARTIST": "artist",
@@ -18,7 +18,7 @@ exports[`Embed Types and URL's SpotifyEmbedTypes enum should match snapshot 1`] 
 }
 `;
 
-exports[`Embed Types and URL's SpotifyEmbedUrl enum should match snapshot 1`] = `
+exports[`Embed Types and URL's > SpotifyEmbedUrl enum should match snapshot 1`] = `
 {
   "ALBUM": "https://open.spotify.com/embed/album/",
   "ARTIST": "https://open.spotify.com/embed/artist/",
@@ -29,7 +29,7 @@ exports[`Embed Types and URL's SpotifyEmbedUrl enum should match snapshot 1`] = 
 }
 `;
 
-exports[`Sizes Compact enum should match snapshot 1`] = `
+exports[`Sizes > Compact enum should match snapshot 1`] = `
 {
   "300": "WIDTH",
   "80": "HEIGHT",
@@ -38,7 +38,7 @@ exports[`Sizes Compact enum should match snapshot 1`] = `
 }
 `;
 
-exports[`Sizes Default enum should match snapshot 1`] = `
+exports[`Sizes > Default enum should match snapshot 1`] = `
 {
   "300": "WIDTH",
   "380": "HEIGHT",

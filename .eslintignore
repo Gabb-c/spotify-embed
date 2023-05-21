@@ -1,8 +1,0 @@
-node_modules
-lib
-.husky
-.vscode
-.github
-/*.js
-/*.cjs
-*.test-d.ts

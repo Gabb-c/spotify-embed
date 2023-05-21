@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "yarn build-storybook-docs",
-  "devCommand": "yarn storybook",
+  "buildCommand": "pnpm build-storybook-docs",
+  "devCommand": "pnpm storybook",
   "installCommand": "yarn --frozen-lockfile --silent",
   "framework": null,
   "outputDirectory": "./storybook-static"
