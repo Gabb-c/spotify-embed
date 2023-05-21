@@ -14,4 +14,5 @@ export default defineConfig({
   dts: true,
   format: ["cjs", "esm"],
   minify: isCI,
+  loader: { ".js": "jsx" }
 });
