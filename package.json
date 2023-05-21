@@ -22,8 +22,8 @@
     "email": "gdgabrieldacunha71@gmail.com"
   },
   "type": "module",
-  "main": "lib/index.js",
-  "module": "lib/index.esm.js",
+  "main": "lib/index.cjs",
+  "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"

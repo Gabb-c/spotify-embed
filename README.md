@@ -1,11 +1,5 @@
 # spotify-embed
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8e7820ec-bbf6-4582-9a38-8e1e2a8e1f2d/deploy-status)](https://app.netlify.com/sites/spotify-embed/deploys)
-![workflow](https://img.shields.io/github/workflow/status/Gabb-c/spotify-embed/Build?logo=nodedotjs)
-![workflow](https://img.shields.io/github/workflow/status/Gabb-c/spotify-embed/Test?logo=jest&label=tests)
-![workflow](https://img.shields.io/github/workflow/status/Gabb-c/spotify-embed/Build%20Storybook?logo=storybook&label=docs)
-![workflow](https://img.shields.io/github/workflow/status/Gabb-c/spotify-embed/Lint?logo=eslint&label=lint)
-
 A plug-n-play Spotify Embed Component. An easy way to use Spotify Embeds with just the resource URL/URI.
 You can create Embeds for **albums, tracks, artists, playlists, episodes or shows**.
 
