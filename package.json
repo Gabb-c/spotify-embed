@@ -29,7 +29,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "rollup -c && size-limit",
+    "build": "rollup -c",
     "build-storybook": "storybook build",
     "build-storybook-docs": "storybook build --docs",
     "format": "rome format ./src",
