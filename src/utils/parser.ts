@@ -41,7 +41,7 @@ export const urlParser = (url: string, theme?: "light" | "dark"): string => {
   if (url.length === 0 || !url.startsWith("https://open.spotify.com/")) return "";
   const parsed = url.split("/");
 
-  return buildUrl(parsed[3], parsed[4]?.split("?")[0], theme);
+  return buildUrl(parsed[3] as string, parsed[4]?.split("?")[0] as string, theme);
 };
 
 /**
@@ -54,5 +54,5 @@ export const uriParser = (uri: string, theme?: "light" | "dark"): string => {
 
   const parsed = uri.split(":");
 
-  return buildUrl(parsed[1], parsed[2], theme);
+  return buildUrl(parsed[1] as string, parsed[2] as string, theme);
 };

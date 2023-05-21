@@ -29,7 +29,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "tsup --config tsup.config.ts",
+    "build": "rollup -c && size-limit",
     "build-storybook": "storybook build",
     "build-storybook-docs": "storybook build --docs",
     "format": "rome format ./src",
@@ -50,12 +50,18 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-swc": "^0.1.1",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.7",
     "@semantic-release/npm": "^10.0.3",
     "@semantic-release/release-notes-generator": "^11.0.1",
+    "@size-limit/preset-small-lib": "^8.2.4",
     "@storybook/addon-coverage": "^0.0.8",
     "@storybook/addon-docs": "^7.0.12",
     "@storybook/addon-essentials": "7.0.12",
@@ -85,8 +91,13 @@
     "prop-types": "15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup": "^3.22.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rome": "12.1.2",
     "semantic-release": "^21.0.2",
+    "size-limit": "^8.2.4",
     "sort-package-json": "^2.4.1",
     "storybook": "7.0.12",
     "tsup": "^6.7.0",
@@ -99,5 +110,11 @@
   },
   "engines": {
     "node": ">=14.x.x"
-  }
+  },
+  "size-limit": [
+    {
+      "path": "lib/index.js",
+      "limit": "10 kB"
+    }
+  ]
 }
