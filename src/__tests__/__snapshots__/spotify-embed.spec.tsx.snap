@@ -6,6 +6,7 @@ exports[`Spotify Embed > should match snapshot (URI) 1`] = `
   aria-label="spotify-embed"
   height="380"
   src="https://open.spotify.com/embed/track/5mslcDXYQbmOFL6s031NvN?theme=1"
+  style="border: 0px;"
   theme="light"
   width="300"
 />
@@ -17,6 +18,7 @@ exports[`Spotify Embed > should match snapshot (URL) 1`] = `
   aria-label="spotify-embed"
   height="380"
   src="https://open.spotify.com/embed/track/5mslcDXYQbmOFL6s031NvN?theme=1"
+  style="border: 0px;"
   theme="light"
   width="300"
 />
