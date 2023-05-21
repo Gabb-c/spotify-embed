@@ -36,6 +36,7 @@
     "format:fix": "rome format --write ./src",
     "lint": "rome check src",
     "lint:fix": "rome check --apply-unsafe ./src",
+    "lint:tsc": "tsc --diagnostics",
     "prepare": "is-ci || husky install",
     "prepublishOnly": "pnpm build",
     "storybook": "storybook dev -p 6006",
