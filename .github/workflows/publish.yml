@@ -46,7 +46,7 @@ jobs:
 
   release:
     name: Release
-    if: ${{ github.ref == 'refs/heads/stable' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     needs: build
     runs-on: ubuntu-latest
     steps:
