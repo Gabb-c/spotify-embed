@@ -21,16 +21,16 @@
       {
         "assets": [
           {
-            "path": "lib/index.esm.js",
-            "label": "ES Module"
+            "path": "lib/index.js",
+            "label": "es-module"
           },
           {
-            "path": "lib/index.js",
-            "label": "Common JS"
+            "path": "lib/index.cjs",
+            "label": "common-js"
           },
           {
             "path": "lib/index.d.ts",
-            "label": "Typings"
+            "label": "typings"
           }
         ]
       }
