@@ -28,7 +28,7 @@ export interface SpotifyEmbedProps
  * @returns The Spotify embed
  * @see https://developer.spotify.com/documentation/widgets/
  */
-export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element => {
+export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): React.JSX.Element => {
   const {
     size = "default",
     src = "",
@@ -45,6 +45,7 @@ export const SpotifyEmbed: React.FC<SpotifyEmbedProps> = (props): JSX.Element =>
         width={size === "default" ? Default.WIDTH : size === "custom" ? width : Compact.WIDTH}
         height={size === "default" ? Default.HEIGHT : size === "custom" ? height : Compact.HEIGHT}
         aria-label="spotify-embed"
+        style={{ border: 0 }}
         allow="autoplay; transparency; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       />
     </>
