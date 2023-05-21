@@ -8,11 +8,10 @@ export default defineConfig({
   entry: ["src/index.ts"],
   outDir: "lib",
   splitting: true,
-  external: EXTERNAL_DEPS,
+  external: ["react"],
   sourcemap: !isCI,
   clean: !isCI,
   dts: true,
   format: ["cjs", "esm"],
-  minify: isCI,
-  loader: { ".js": "jsx" }
+  minify: isCI
 });
