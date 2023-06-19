@@ -99,7 +99,7 @@
     "semantic-release": "^21.0.2",
     "size-limit": "^8.2.4",
     "sort-package-json": "^2.4.1",
-    "storybook": "7.0.12",
+    "storybook": "7.0.22",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4",
     "vitest": "^0.31.1"
