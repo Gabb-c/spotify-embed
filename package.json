@@ -63,7 +63,7 @@
     "@semantic-release/release-notes-generator": "^11.0.1",
     "@size-limit/preset-small-lib": "^8.2.4",
     "@storybook/addon-coverage": "^0.0.8",
-    "@storybook/addon-docs": "^7.0.12",
+    "@storybook/addon-docs": "^8.1.11",
     "@storybook/addon-essentials": "7.0.12",
     "@storybook/addon-interactions": "7.0.12",
     "@storybook/addon-links": "7.0.12",
