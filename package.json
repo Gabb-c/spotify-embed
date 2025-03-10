@@ -83,7 +83,7 @@
     "@vitejs/plugin-react": "^4.0.0",
     "@vitest/coverage-c8": "^0.31.1",
     "@vitest/ui": "^0.31.1",
-    "ci-info": "^3.8.0",
+    "ci-info": "^4.2.0",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1",
     "jsdom": "^22.0.0",
